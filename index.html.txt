@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasil Onix Roleplay — Painel</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Botão Menu Mobile -->
+    <button class="menu-toggle" id="menuToggle">
+        <i class="fa fa-bars"></i>
+    </button>
+
+    <!-- Barra Lateral -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <img src="https://via.placeholder.com/150x150" alt="Logo Play Shox" class="logo">
+            <button class="server-btn">Servidor 1</button>
+        </div>
+
+        <nav class="sidebar-nav">
+            <button class="nav-item active" data-tab="inicio">
+                <i class="fa fa-th-large"></i>
+                <span>Início</span>
+                <span class="dot"></span>
+            </button>
+            <button class="nav-item" data-tab="instaonix">
+                <i class="fa fa-instagram"></i>
+                <span>InstaShox</span>
+                <span class="dot"></span>
+            </button>
+            <button class="nav-item" data-tab="regras">
+                <i class="fa fa-list-check"></i>
+                <span>Regras</span>
+                <span class="dot"></span>
+            </button>
+            <div class="nav-group">
+                <button class="nav-item has-submenu" data-submenu="loja">
+                    <i class="fa fa-shopping-bag"></i>
+                    <span>Loja</span>
+                    <i class="fa fa-chevron-down arrow"></i>
+                </button>
+            </div>
+            <div class="nav-group">
+                <button class="nav-item has-submenu" data-submenu="ouvidoria">
+                    <i class="fa fa-headphones"></i>
+                    <span>Ouvidoria</span>
+                    <i class="fa fa-chevron-down arrow"></i>
+                </button>
+            </div>
+            <div class="nav-group">
+                <button class="nav-item has-submenu" data-submenu="sorteios">
+                    <i class="fa fa-gift"></i>
+                    <span>Sorte e Recompensas</span>
+                    <i class="fa fa-chevron-down arrow"></i>
+                </button>
+            </div>
+            <div class="nav-group">
+                <button class="nav-item has-submenu" data-submenu="seletivas">
+                    <i class="fa fa-users"></i>
+                    <span>Seletivas</span>
+                    <i class="fa fa-chevron-down arrow"></i>
+                </button>
+            </div>
+            <div class="nav-group">
+                <button class="nav-item has-submenu" data-submenu="info">
+                    <i class="fa fa-circle-info"></i>
+                    <span>Informações</span>
+                    <i class="fa fa-chevron-down arrow"></i>
+                </button>
+            </div>
+            <div class="nav-group">
+                <button class="nav-item has-submenu" data-submenu="config">
+                    <i class="fa fa-cog"></i>
+                    <span>Configurações</span>
+                    <i class="fa fa-chevron-down arrow"></i>
+                </button>
+            </div>
+            <button class="nav-item" data-tab="minhaconta">
+                <i class="fa fa-user"></i>
+                <span>Minha Conta</span>
+                <i class="fa fa-chevron-down arrow"></i>
+            </button>
+            <button class="nav-item logout">
+                <i class="fa fa-sign-out"></i>
+                <span>Sair</span>
+            </button>
+        </nav>
+
+        <div class="sidebar-footer">
+            <p>Termos e Políticas • v1.7.2</p>
+        </div>
+    </aside>
+
+    <!-- Conteúdo Principal -->
+    <main class="content">
+        <!-- Cabeçalho Topo -->
+        <header class="top-header">
+            <button class="icon-btn"><i class="fa fa-bars"></i></button>
+            <div class="header-actions">
+                <button class="icon-btn"><i class="fa fa-bell"></i></button>
+                <button class="profile-btn">
+                    <img src="https://via.placeholder.com/40" alt="Perfil">
+                </button>
+            </div>
+        </header>
+
+        <!-- Aba INÍCIO -->
+        <div class="tab-content active" id="inicio">
+            <div class="welcome-card">
+                <span class="badge">INÍCIO</span>
+                <h1>Bem-vindo de volta</h1>
+                <p>Acompanhe um resumo rápido da sua conta no servidor.</p>
+            </div>
+
+            <div class="quick-actions">
+                <button class="action-btn"><i class="fa fa-user"></i></button>
+                <button class="action-btn active"><i class="fa fa-chart-bar"></i></button>
+                <button class="action-btn"><i class="fa fa-file-text"></i></button>
+                <button class="action-btn"><i class="fa fa-gift"></i></button>
+                <button class="action-btn"><i class="fa fa-car"></i></button>
+                <button class="action-btn"><i class="fa fa-archive"></i></button>
+            </div>
+
+            <h2 class="section-title">Início</h2>
+            <p class="section-subtitle">Resumo rápido da sua conta no servidor.</p>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">$</div>
+                    <div>
+                        <span class="stat-label">Dinheiro</span>
+                        <span class="stat-value">R$ 1.284.500</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🏠</div>
+                    <div>
+                        <span class="stat-label">Banco</span>
+                        <span class="stat-value">R$ 5.930.000</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">⭐</div>
+                    <div>
+                        <span class="stat-label">Nível</span>
+                        <span class="stat-value">47 • 7.320/10.000 XP</span>
+                    </div>
+                    <span class="rank-badge">Sargento PM</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Aba MINHA CONTA -->
+        <div class="tab-content" id="minhaconta">
+            <div class="welcome-card green-card">
+                <span class="badge">MINHA CONTA</span>
+                <h1>Gerencie seus itens</h1>
+                <p>Visualize seus veículos, baús, portões e estatísticas.</p>
+            </div>
+
+            <div class="quick-actions">
+                <button class="action-btn"><i class="fa fa-user"></i></button>
+                <button class="action-btn active"><i class="fa fa-chart-bar"></i></button>
+                <button class="action-btn"><i class="fa fa-file-text"></i></button>
+                <button class="action-btn"><i class="fa fa-gift"></i></button>
+                <button class="action-btn"><i class="fa fa-car"></i></button>
+                <button class="action-btn"><i class="fa fa-archive"></i></button>
+            </div>
+
+            <h2 class="section-title">Estatísticas da Conta</h2>
+            <p class="section-subtitle">Seu desempenho, propriedades e combate no servidor.</p>
+
+            <div class="stats-grid two-col">
+                <div class="stat-card">
+                    <div class="stat-icon yellow">⭐</div>
+                    <div>
+                        <span class="stat-label">Nível</span>
+                        <span class="stat-value">67</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon blue">⏱️</div>
+                    <div>
+                        <span class="stat-label">Horas</span>
+                        <span class="stat-value">3.950</span>
+                    </div>
+                </div>
+                <div class="stat-card full-width">
+                    <div class="stat-icon green">$</div>
+                    <div>
+                        <span class="stat-label">Dinheiro</span>
+                        <span class="stat-value">$ 10.006.999</span>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title">Propriedades</h2>
+            <div class="stat-card full-width">
+                <div class="stat-icon purple">🔨</div>
+                <div>
+                    <span class="stat-label">Fazenda</span>
+                    <span class="stat-value">Propriedade #255</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Aba INVENTÁRIO -->
+        <div class="tab-content" id="inventario">
+            <div class="welcome-card green-card">
+                <span class="badge">MINHA CONTA</span>
+                <h1>Gerencie seus itens</h1>
+                <p>Visualize seus veículos, baús, portões e estatísticas.</p>
+            </div>
+
+            <div class="quick-actions">
+                <button class="action-btn"><i class="fa fa-gift"></i></button>
+                <button class="action-btn"><i class="fa fa-car"></i></button>
+                <button class="action-btn"><i class="fa fa-archive"></i></button>
+                <button class="action-btn"><i class="fa fa-chart-bar"></i></button>
+                <button class="action-btn"><i class="fa fa-map-marker"></i></button>
+                <button class="action-btn active"><i class="fa fa-box"></i></button>
+            </div>
+
+            <h2 class="section-title">Meu Inventário</h2>
+            <span class="slots-badge">7/75 slots</span>
+
+            <div class="inventory-grid">
+                <div class="inventory-item">
+                    <span>Pizza</span>
+                    <small>x5</small>
+                    <i class="fa fa-refresh swap-icon"></i>
+                </div>
+                <div class="inventory-item">
+                    <span>Água</span>
+                    <small>x5</small>
+                    <i class="fa fa-refresh swap-icon"></i>
+                </div>
+                <div class="inventory-item">
+                    <span>Cont Ho...</span>
+                    <small>x5</small>
+                    <i class="fa fa-refresh swap-icon"></i>
+                </div>
+                <div class="inventory-item">
+                    <span>Caixa Br...</span>
+                    <small>x5</small>
+                    <i class="fa fa-refresh swap-icon"></i>
+                </div>
+                <div class="inventory-item">
+                    <span>Eagle</span>
+                    <small>x100</small>
+                    <i class="fa fa-refresh swap-icon"></i>
+                </div>
+                <div class="inventory-item">
+                    <span>Caixa Br...</span>
+                    <small>x5</small>
+                    <i class="fa fa-refresh swap-icon"></i>
+                </div>
+                <div class="inventory-item">
+                    <span>Caixa Br...</span>
+                    <small>x5</small>
+                    <i class="fa fa-refresh swap-icon"></i>
+                </div>
+                <div class="inventory-item empty"></div>
+                <div class="inventory-item empty"><span>7</span></div>
+                <div class="inventory-item empty"><span>8</span></div>
+                <div class="inventory-item empty"><span>9</span></div>
+                <div class="inventory-item empty"><span>10</span></div>
+                <div class="inventory-item empty"><span>11</span></div>
+                <div class="inventory-item empty"><span>12</span></div>
+                <div class="inventory-item empty"><span>13</span></div>
+                <div class="inventory-item empty"><span>14</span></div>
+            </div>
+
+            <div class="pagination">
+                <button class="page-btn"><i class="fa fa-chevron-left"></i></button>
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn">4</button>
+                <button class="page-btn">5</button>
+                <button class="page-btn"><i class="fa fa-chevron-right"></i></button>
+            </div>
+        </div>
+
+        <!-- Aba REGRAS -->
+        <div class="tab-content" id="regras">
+            <div class="welcome-card gold-card">
+                <span class="badge">REGRAS</span>
+                <h1>Regras do servidor</h1>
+                <p>Leia com atenção. O descumprimento pode resultar em punições.</p>
+            </div>
+
+            <h2 class="section-title">Regras do Servidor</h2>
+            <p class="section-subtitle">Leia com atenção. O descumprimento pode resultar em punições.</p>
+
+            <div class="rules-list">
+                <div class="rule-card">
+                    <h3>Respeito acima de tudo</h3>
+                    <p>Proibido preconceito, assédio ou ofensas a outros jogadores.</p>
+                </div>
+                <div class="rule-card">
+                    <h3>Proibido RDM/VDM</h3>
+                    <p>Matar ou atropelar sem motivo de roleplay é banível.</p>
+                </div>
+                <div class="rule-card">
+                    <h3>Uma conta por pessoa</h3>
+                    <p>Multi-contas sem autorização resultarão em banimento.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
